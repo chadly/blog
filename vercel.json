@@ -1,0 +1,356 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/post/2009/02/01/Agile-Software-Development-from-a-Business-Perspective.aspx",
+      "destination": "/agile-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/agile-software-development-from-a-business-perspective",
+      "destination": "/agile-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/2009/02/agile-software-development-from-a-business-perspective",
+      "destination": "/agile-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/2009/02/agile-software-development",
+      "destination": "/agile-software-development",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/03/14/AspNet-MVC-and-Sealed-Classes.aspx",
+      "destination": "/asp-net-mvc-and-sealed-classes",
+      "permanent": true
+    },
+    {
+      "source": "/2009/03/asp-net-mvc-and-sealed-classes",
+      "destination": "/asp-net-mvc-and-sealed-classes",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/04/20/BDD-with-xUnit.aspx",
+      "destination": "/bdd-with-xunit-net",
+      "permanent": true
+    },
+    {
+      "source": "/2009/04/bdd-with-xunit-net",
+      "destination": "/bdd-with-xunit-net",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/05/28/Dependency-Injection-with-NHibernate-and-Autofac.aspx",
+      "destination": "/dependency-injection-with-nhibernate-and-autofac",
+      "permanent": true
+    },
+    {
+      "source": "/2009/05/dependency-injection-with-nhibernate-and-autofac",
+      "destination": "/dependency-injection-with-nhibernate-and-autofac",
+      "permanent": true
+    },
+    {
+      "source": "/2009/05/dependency-injection-with-nhi",
+      "destination": "/dependency-injection-with-nhibernate-and-autofac",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/03/29/Developing-with-Passion.aspx",
+      "destination": "/developing-with-passion",
+      "permanent": true
+    },
+    {
+      "source": "/2009/03/developing-with-passion",
+      "destination": "/developing-with-passion",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/03/10/Custom-MonorailHttpHandlerFactory-to-handle-404s-gracefully.aspx",
+      "destination": "/handle-monorail-404s-gracefully",
+      "permanent": true
+    },
+    {
+      "source": "/custom-monorailhttphandlerfactory-to-handle-404s-gracefully",
+      "destination": "/handle-monorail-404s-gracefully",
+      "permanent": true
+    },
+    {
+      "source": "/2009/03/custom-monorailhttphandlerfactory-to-handle-404s-gracefully",
+      "destination": "/handle-monorail-404s-gracefully",
+      "permanent": true
+    },
+    {
+      "source": "/2009/03/handle-monorail-404s-gracefully",
+      "destination": "/handle-monorail-404s-gracefully",
+      "permanent": true
+    },
+    {
+      "source": "/2014/02/epson-gt-s50-linux",
+      "destination": "/epson-gt-s50-linux",
+      "permanent": true
+    },
+    {
+      "source": "/2014/02/scanning-ocr-with-epson-gt-s50-on-linux-mint",
+      "destination": "/epson-gt-s50-linux",
+      "permanent": true
+    },
+    {
+      "source": "/2014/05/git-bcompare",
+      "destination": "/git-bcompare",
+      "permanent": true
+    },
+    {
+      "source": "/2014/05/git-bcompare3",
+      "destination": "/git-bcompare",
+      "permanent": true
+    },
+    {
+      "source": "/2016/09/configuring-beyond-compare-4-with-git",
+      "destination": "/git-bcompare",
+      "permanent": true
+    },
+    {
+      "source": "/2014/05/configuring-beyond-compare-3-with-git",
+      "destination": "/git-bcompare",
+      "permanent": true
+    },
+    {
+      "source": "/2016/09/git-bcompare",
+      "destination": "/git-bcompare",
+      "permanent": true
+    },
+    {
+      "source": "/2016/09/git-bcompare4",
+      "destination": "/git-bcompare",
+      "permanent": true
+    },
+    {
+      "source": "/2014/05/configuring-beyond-compare-with-git",
+      "destination": "/git-bcompare",
+      "permanent": true
+    },
+    {
+      "source": "/2014/02/healthy-developers",
+      "destination": "/healthy-developers",
+      "permanent": true
+    },
+    {
+      "source": "/2014/02/a-good-developer-is-a-healthy-developer",
+      "destination": "/healthy-developers",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/01/25/Hello-Universe.aspx",
+      "destination": "/hello-universe",
+      "permanent": true
+    },
+    {
+      "source": "/2009/01/hello-universe",
+      "destination": "/hello-universe",
+      "permanent": true
+    },
+    {
+      "source": "/lazy-loading-an-observable-array-with-knockout-js",
+      "destination": "/lazy-loading-with-knockout",
+      "permanent": true
+    },
+    {
+      "source": "/2012/09/lazy-loading-an-observable-array-with-knockout-js",
+      "destination": "/lazy-loading-with-knockout",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/01/29/Lightbox-for-YouTube-Videos.aspx",
+      "destination": "/lightbox-for-youtube-videos",
+      "permanent": true
+    },
+    {
+      "source": "/2009/01/lightbox-for-youtube-videos",
+      "destination": "/lightbox-for-youtube-videos",
+      "permanent": true
+    },
+    {
+      "source": "/demos/video-lightbox.html",
+      "destination": "/lightbox-for-youtube-videos",
+      "permanent": true
+    },
+    {
+      "source": "/2014/03/live-tv-in-linux",
+      "destination": "/live-tv-linux",
+      "permanent": true
+    },
+    {
+      "source": "/2014/03/live-tv-with-hauppauge-wintv-hvr2250-in-elementary-os",
+      "destination": "/live-tv-linux",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/08/26/The-Many-Pitfalls-of-NHibernateLinq.aspx",
+      "destination": "/many-pitfalls-of-nhibernate-linq",
+      "permanent": true
+    },
+    {
+      "source": "/the-many-pitfalls-of-nhibernate-linq",
+      "destination": "/many-pitfalls-of-nhibernate-linq",
+      "permanent": true
+    },
+    {
+      "source": "/2009/08/the-many-pitfalls-of-nhibernate-linq",
+      "destination": "/many-pitfalls-of-nhibernate-linq",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/07/27/NHibernateLinq-10-is-out-and-about.aspx",
+      "destination": "/nhibernate-linq-1",
+      "permanent": true
+    },
+    {
+      "source": "/nhibernate-linq-1-0-is-out-and-about",
+      "destination": "/nhibernate-linq-1",
+      "permanent": true
+    },
+    {
+      "source": "/2009/07/nhibernate-linq-1-0-is-out-and-about",
+      "destination": "/nhibernate-linq-1",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/10/30/Creating-NHibernate-Linq-Query-from-arbitrary-Criteria.aspx",
+      "destination": "/nhibernate-linq-criteria",
+      "permanent": true
+    },
+    {
+      "source": "/creating-nhibernate-linq-query-from-arbitrary-criteria",
+      "destination": "/nhibernate-linq-criteria",
+      "permanent": true
+    },
+    {
+      "source": "/2009/10/creating-nhibernate-linq-query-from-arbitrary-criteria",
+      "destination": "/nhibernate-linq-criteria",
+      "permanent": true
+    },
+    {
+      "source": "/2009/10/creating-nhibernate-linq-query-from-criteria",
+      "destination": "/nhibernate-linq-criteria",
+      "permanent": true
+    },
+    {
+      "source": "/2015/04/nvidia-drivers",
+      "destination": "/nvidia-drivers-ubuntu",
+      "permanent": true
+    },
+    {
+      "source": "/2015/04/installing-nvidia-drivers-for-gtx-650-ti-boost-in-ubuntu-14-04",
+      "destination": "/nvidia-drivers-ubuntu",
+      "permanent": true
+    },
+    {
+      "source": "/2015/04/publishing-react-to-npm",
+      "destination": "/publishing-react-to-npm",
+      "permanent": true
+    },
+    {
+      "source": "/2015/04/publishing-a-react-component-to-npm",
+      "destination": "/publishing-react-to-npm",
+      "permanent": true
+    },
+    {
+      "source": "/2014/03/steam-on-linux",
+      "destination": "/steam-on-linux",
+      "permanent": true
+    },
+    {
+      "source": "/2014/03/moving-steam-folder-out-of-home-in-linux",
+      "destination": "/steam-on-linux",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/04/13/Tortoise-SVN-Settings-for-Beyond-Compare-3.aspx",
+      "destination": "/tortoise-svn-settings-for-beyond-compare-3",
+      "permanent": true
+    },
+    {
+      "source": "/2009/04/tortoise-svn-settings-for-beyond-compare-3",
+      "destination": "/tortoise-svn-settings-for-beyond-compare-3",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/03/09/Its-Tough-Times-Out-There.aspx",
+      "destination": "/tough-times-out-there",
+      "permanent": true
+    },
+    {
+      "source": "/its-tough-times-out-there",
+      "destination": "/tough-times-out-there",
+      "permanent": true
+    },
+    {
+      "source": "/2009/03/it-s-tough-times-out-there",
+      "destination": "/tough-times-out-there",
+      "permanent": true
+    },
+    {
+      "source": "/2009/03/its-tough-times-out-there",
+      "destination": "/tough-times-out-there",
+      "permanent": true
+    },
+    {
+      "source": "/2009/03/tough-times-out-there",
+      "destination": "/tough-times-out-there",
+      "permanent": true
+    },
+    {
+      "source": "/a-poor-mans-transclude-in-knockout-js",
+      "destination": "/transclude-in-knockout-js",
+      "permanent": true
+    },
+    {
+      "source": "/2013/12/a-poor-mans-transclude-in-knockout-js",
+      "destination": "/transclude-in-knockout-js",
+      "permanent": true
+    },
+    {
+      "source": "/2013/12/a-poor-man-s-transclude-in-knockout-js",
+      "destination": "/transclude-in-knockout-js",
+      "permanent": true
+    },
+    {
+      "source": "/2016/03/unpublish-isnt-a-word",
+      "destination": "/unpublish-isnt-a-word",
+      "permanent": true
+    },
+    {
+      "source": "/2016/03/unpublish-isn-t-a-word",
+      "destination": "/unpublish-isnt-a-word",
+      "permanent": true
+    },
+    {
+      "source": "/2013/10/user-experience-matters-more-than-you-think",
+      "destination": "/user-experience-matters-more-than-you-think",
+      "permanent": true
+    },
+    {
+      "source": "/post/2009/07/09/we-make-shitty-software-and-so-do-you.aspx",
+      "destination": "/we-make-shitty-software-and-so-do-you",
+      "permanent": true
+    },
+    {
+      "source": "/2009/07/we-make-shitty-software-and-so-do-you",
+      "destination": "/we-make-shitty-software-and-so-do-you",
+      "permanent": true
+    },
+    {
+      "source": "/2012/08/the-wonderful-world-of-git",
+      "destination": "/what-you-get-with-git",
+      "permanent": true
+    },
+    {
+      "source": "/2012/08/what-you-get-with-git",
+      "destination": "/what-you-get-with-git",
+      "permanent": true
+    }
+  ]
+}
