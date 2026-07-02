@@ -1,5 +1,5 @@
 import "server-only";
-import { SITE_URL } from "./site";
+import { WEBMENTION_SITE_URL } from "./site";
 
 export interface WebmentionAuthor {
 	name: string;
@@ -33,8 +33,8 @@ export async function getWebmentions(slugs: string[]): Promise<Webmention[]> {
 	for (const slug of slugs) {
 		const p = `/${slug.replace(/^\/|\/$/g, "")}/`;
 		for (const prefix of ["", "/blog"]) {
-			targets.add(`${SITE_URL}${prefix}${p}`);
-			targets.add(`${SITE_URL}${prefix}${p.replace(/\/$/, "")}`);
+			targets.add(`${WEBMENTION_SITE_URL}${prefix}${p}`);
+			targets.add(`${WEBMENTION_SITE_URL}${prefix}${p.replace(/\/$/, "")}`);
 		}
 	}
 
