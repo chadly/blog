@@ -68,20 +68,19 @@ const Feedback = ({
 	const any = likes.length || comments.length || reposts.length;
 
 	return (
-		<section className="border-b border-[color:var(--hr)] pb-6">
-			<div className="mb-6">
-				<p className="m-0 text-center text-2xl font-bold">
-					{!any ? "Send me a Webmention" : "Webmentions"}
-				</p>
-				<p className="m-0 text-center">
-					<a
-						href="https://indieweb.org/Webmention"
-						className="text-sm text-[color:var(--textMuted)] underline"
-					>
-						What is this?
-					</a>
-				</p>
+		<section className="rounded-md border border-[color:var(--grid)] bg-[color:var(--panel)] p-5 sm:p-6">
+			<div className="mb-6 flex items-baseline justify-between border-b border-[color:var(--grid)] pb-2 font-mono text-[0.7rem] tracking-[0.2em] text-[color:var(--textMuted)] uppercase">
+				<span>[ incoming transmissions ]</span>
+				<a
+					href="https://indieweb.org/Webmention"
+					className="text-[color:var(--textMuted)] underline"
+				>
+					what is this?
+				</a>
 			</div>
+			<p className="m-0 mb-4 text-center font-mono text-xl font-bold text-[color:var(--textTitle)]">
+				{!any ? "Send me a Webmention" : "Webmentions"}
+			</p>
 
 			<TwitterIntents twitterId={twitterId} />
 

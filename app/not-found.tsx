@@ -8,7 +8,22 @@ export default function NotFound() {
 	return (
 		<Container>
 			<SiteHeader />
-			<main role="main">
+			<main role="main" className="mt-10">
+				<div className="rounded-md border border-[color:var(--grid)] bg-[color:var(--panel)] p-6 font-mono text-sm">
+					<p className="m-0 text-[color:var(--textMuted)]">
+						$ cat {"<that page>"}
+					</p>
+					<p className="m-0 mt-1 text-[color:var(--textTitle)]">
+						cat: no such file or directory{" "}
+						<span className="text-[#ff5a52]">[404]</span>
+					</p>
+					<p className="m-0 mt-4 text-[color:var(--textMuted)]">
+						try:{" "}
+						<Link href="/" className="underline">
+							cd ~
+						</Link>
+					</p>
+				</div>
 				<Link href="/">
 					<Image
 						src={img404}

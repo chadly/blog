@@ -3,26 +3,24 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
+// Switches medium, not mood: green-phosphor screen ↔ paper printout.
 const ThemeToggle = () => {
 	const { resolvedTheme, setTheme } = useTheme();
 	const [mounted, setMounted] = useState(false);
 
 	useEffect(() => setMounted(true), []);
 
+	const dark = !mounted || resolvedTheme === "dark";
+
 	return (
-		<label className="float-right block cursor-pointer px-5 py-2">
-			<input
-				type="checkbox"
-				className="hidden"
-				onChange={e => setTheme(e.target.checked ? "dark" : "light")}
-				checked={mounted && resolvedTheme === "dark"}
-			/>{" "}
-			{!mounted || resolvedTheme === "light" ? (
-				<span title="Turn to the dark side">☀️</span>
-			) : (
-				<span title="Turn to the light">🌙</span>
-			)}
-		</label>
+		<button
+			type="button"
+			onClick={() => setTheme(dark ? "light" : "dark")}
+			title={dark ? "Print it out" : "Back to the terminal"}
+			className="float-right cursor-pointer px-5 py-3 font-mono text-[0.7rem] tracking-[0.15em] text-[color:var(--textMuted)] uppercase hover:text-[color:var(--textLink)]"
+		>
+			display: [{dark ? "crt" : "paper"}]
+		</button>
 	);
 };
 

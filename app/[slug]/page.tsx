@@ -73,20 +73,23 @@ export default async function PostPage({
 
 			<main role="main">
 				<article className="h-entry">
-					<header className="my-6">
-						<h1 className="p-name mb-1 text-4xl font-bold text-[color:var(--textTitle)]">
+					<header className="mt-10 mb-8 font-mono">
+						<p className="m-0 text-[0.7rem] tracking-[0.2em] text-[color:var(--textMuted)] uppercase">
+							$ cat ~/posts/{post.slug}
+						</p>
+						<h1 className="p-name mt-1 mb-1 text-3xl font-bold tracking-tight text-[color:var(--textTitle)] sm:text-4xl">
 							{post.title}
 						</h1>
-						<div className="text-[color:var(--textMuted)]">
+						<div className="text-[0.75rem] text-[color:var(--textMuted)]">
 							<a
 								href={`${SITE_URL}/${post.slug}/`}
 								className="u-url text-[color:var(--textMuted)] no-underline"
 							>
-								<time dateTime={post.date} className="dt-published text-sm">
+								<time dateTime={post.date} className="dt-published">
 									{formatDate(post.date)}
 								</time>
 							</a>
-							<span className="float-right text-sm">
+							<span className="float-right text-[color:var(--amber)]">
 								{post.readingTime} min read
 							</span>
 						</div>

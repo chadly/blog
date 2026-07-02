@@ -1,11 +1,24 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { author } from "@/lib/author";
 import { SITE_URL } from "@/lib/site";
 import ThemeToggle from "@/components/theme-toggle";
 import Footer from "@/components/footer";
 import "./globals.css";
+
+const plexMono = IBM_Plex_Mono({
+	subsets: ["latin"],
+	weight: ["400", "600", "700"],
+	variable: "--font-plex-mono"
+});
+
+const plexSans = IBM_Plex_Sans({
+	subsets: ["latin"],
+	weight: ["400", "600", "700"],
+	variable: "--font-plex-sans"
+});
 
 export const metadata: Metadata = {
 	metadataBase: new URL(SITE_URL),
@@ -34,10 +47,29 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" suppressHydrationWarning>
-			<body>
+		<html
+			lang="en"
+			suppressHydrationWarning
+			className={`${plexMono.variable} ${plexSans.variable}`}
+		>
+			<body className="relative">
 				<div hidden dangerouslySetInnerHTML={{ __html: easterEgg }} />
-				<ThemeProvider attribute="class" defaultTheme="light">
+				{/* scanline veil — the CRT glass (dark mode only via --veil) */}
+				<div
+					aria-hidden="true"
+					className="pointer-events-none fixed inset-0 z-50"
+					style={{ backgroundImage: "var(--veil)" }}
+				/>
+				{/* tractor-feed sprocket holes — printout margins, wide screens only */}
+				<div
+					aria-hidden="true"
+					className="sprocket-rail pointer-events-none fixed inset-y-0 left-0 hidden w-10 border-r border-dashed border-[color:var(--grid)] xl:block dark:hidden"
+				/>
+				<div
+					aria-hidden="true"
+					className="sprocket-rail pointer-events-none fixed inset-y-0 right-0 hidden w-10 border-l border-dashed border-[color:var(--grid)] xl:block dark:hidden"
+				/>
+				<ThemeProvider attribute="class" defaultTheme="dark">
 					<ThemeToggle />
 					{children}
 					<Footer name={author.name} />

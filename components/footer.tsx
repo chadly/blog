@@ -7,19 +7,24 @@ const Footer = ({ name }: { name: string }) => {
 	const cc = usePathname().replace(/\/$/, "") === "/trogdor";
 
 	return (
-		<footer className="mt-8 pb-8 text-center text-sm" title="Copyright">
+		<footer
+			className="mt-8 pb-8 text-center font-mono text-[0.7rem] text-[color:var(--textMuted)]"
+			title="Copyright"
+		>
 			{cc ? (
 				<>
-					Licensed as{" "}
+					licensed as{" "}
 					<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-						Attribution-NonCommercial-ShareAlike 4.0 International
+						attribution-noncommercial-sharealike 4.0
 					</a>
 				</>
 			) : (
 				<>
-					© {name} {new Date().getFullYear()}. All rights reserved.
+					© {name.toLowerCase()} {new Date().getFullYear()} — all rights
+					reserved
 				</>
-			)}
+			)}{" "}
+			· eof
 		</footer>
 	);
 };
