@@ -4,7 +4,7 @@
 	"description": "Personal blog",
 	"version": "3.0.0",
 	"author": "Chad Lee <npm@chadly.net>",
-	"homepage": "https://www.chadly.net/",
+	"homepage": "https://blog.chadly.net/",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
