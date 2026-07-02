@@ -1,12 +1,12 @@
+"use client";
+
 import React, { useEffect } from "react";
 import "./fancy.css";
 
 const Lightbox = ({ href, children }) => {
 	useEffect(() => {
-		if (global.window) {
-			require("./fancy.js");
-		}
-	});
+		import("./fancy.js");
+	}, []);
 
 	return (
 		<a href={href} rel="fancyvideo">

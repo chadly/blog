@@ -31,7 +31,12 @@ typings/
 .env
 
 # build folder
-public
+# public is real static assets now (was gatsby build output)
 
 # gatsby cache folder
 .cache
+
+# next
+.next/
+next-env.d.ts
+content/generated/

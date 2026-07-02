@@ -1,6 +1,0 @@
-https://chadlynet.netlify.com/*   https://www.chadly.net/:splat 301!
-
-/2013/12/geocoding-v3             https://github.com/chadly/Geocoding.net
-
-/feed.xml                         /rss.xml
-/rss                              /rss.xml

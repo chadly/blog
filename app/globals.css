@@ -1,0 +1,118 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* theme palette ported from src/theme.js */
+:root {
+	--bg: #f5fffa;
+	--header: #333332;
+	--textNormal: #333332;
+	--textMuted: rgba(95, 95, 95, 0.8);
+	--textTitle: #333332;
+	--textLink: #d40000;
+	--hr: #cfcfcf;
+	--glow: hsla(0, 100%, 0%, 0.2);
+}
+
+.dark {
+	--bg: #282c35;
+	--header: #ffffff;
+	--textNormal: rgba(255, 255, 255, 0.88);
+	--textMuted: rgba(255, 255, 255, 0.6);
+	--textTitle: #ffffff;
+	--textLink: #97ff10;
+	--hr: hsla(0, 0%, 100%, 0.2);
+	--glow: hsla(0, 0%, 100%, 0.1);
+}
+
+html {
+	font-size: 18px;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--textNormal);
+	-webkit-font-smoothing: antialiased;
+	transition:
+		color 0.2s ease-out,
+		background 0.2s ease-out;
+}
+
+a {
+	color: var(--textLink);
+}
+
+hr {
+	border-color: var(--hr);
+}
+
+/* prose palette mapped to the theme vars (replaces typography.js github theme) */
+.prose {
+	--tw-prose-body: var(--textNormal);
+	--tw-prose-headings: var(--textTitle);
+	--tw-prose-links: var(--textLink);
+	--tw-prose-bold: var(--textNormal);
+	--tw-prose-counters: var(--textNormal);
+	--tw-prose-bullets: var(--textNormal);
+	--tw-prose-hr: var(--hr);
+	--tw-prose-quotes: inherit;
+	--tw-prose-quote-borders: var(--hr);
+	--tw-prose-captions: var(--textMuted);
+	--tw-prose-code: var(--textNormal);
+	--tw-prose-th-borders: var(--hr);
+	--tw-prose-td-borders: var(--hr);
+}
+
+.prose h1,
+.prose h2 {
+	border-bottom: 1px solid var(--hr);
+	padding-bottom: 0.3em;
+}
+
+/* wrapped heading anchors (rehype-autolink-headings behavior: wrap) */
+.prose :is(h1, h2, h3, h4, h5, h6) a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.prose blockquote {
+	font-style: italic;
+	opacity: 0.8;
+	font-weight: inherit;
+}
+
+.prose figcaption {
+	text-align: center;
+}
+
+.prose .footnotes li p {
+	display: inline;
+}
+
+/* rehype-pretty-code dual theme: switch shiki colors with .dark */
+.prose pre {
+	tab-size: 4;
+	border: 1px solid var(--hr);
+}
+
+code[data-theme*=" "],
+code[data-theme*=" "] span {
+	color: var(--shiki-light);
+	background-color: var(--shiki-light-bg);
+}
+
+.dark code[data-theme*=" "],
+.dark code[data-theme*=" "] span {
+	color: var(--shiki-dark);
+	background-color: var(--shiki-dark-bg);
+}
+
+pre code[data-theme*=" "] {
+	background-color: var(--shiki-light-bg);
+	display: block;
+}
+
+.dark pre code[data-theme*=" "] {
+	background-color: var(--shiki-dark-bg);
+}
